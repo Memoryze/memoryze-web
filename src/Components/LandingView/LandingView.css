@@ -9,7 +9,7 @@
 	position: absolute;
 	z-index: -1000;
 }
-.pitch-container {
+.section-container {
 	display: flex;
 	width: 90%;
 	max-width: 1200px;
@@ -28,28 +28,43 @@
 	align-self: center;
 }
 .get-the-app-btn {
-	width: 92%;
+	width: 50%;
 	max-width: 300px;
 	text-align: center;
 	padding: 10px;
 	background-color: #40ff40;
-	border-radius: 25px;
+	border-radius: 18px;
 	color: #f1f1f1;
 	text-decoration: none;
-	font-size: 28px;
+	font-size: 1rem;
 	font-weight: bold;
 	cursor: pointer;
 }
+.get-the-app-btn:hover{
+	text-decoration: none;
+}
 .man-studying {
 	width: 50%;
+	max-width: 400px;
 	margin: 20px;
 	margin-top: -25px;
-	max-width: 400px;
 	align-self: center;
+}
+.features{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+.feature-contents-container{
+	display: grid;
+	grid-template-columns: 40% 40%;
+}
+.features-heading{
+
 }
 
 @media (max-width: 694px) {
-	.pitch-container {
+	.section-container {
 		flex-direction: column;
 		padding: 10px;
 	}
