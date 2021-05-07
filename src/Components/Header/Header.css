@@ -1,0 +1,71 @@
+.nav{
+	margin-bottom: 0 !important;
+	position: initial !important;
+}
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: dodgerblue;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav .sidelink:hover {
+	color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+.sidenav,
+.bars,
+.closebtn,
+.side-link {
+	opacity: 0;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+@media (max-width: 600px) {
+	.sidenav,
+	.bars,
+	.closebtn,
+	.side-link {
+		opacity: 1;
+	}
+	.header-links {
+		opacity: 0;
+	}
+	.bars {
+		opacity: 1;
+		color: #2f68f8;
+		width: 10px;
+		/* margin: 15px 20px 5px 5px; */
+		margin-right: 20px;
+		font-size: 45px;
+		cursor: pointer;
+	}
+	.sidenav {
+		width: 250px;
+		height: 100%;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		right: 0;
+		background-color: #111;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 60px;
+	}
+}
