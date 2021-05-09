@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
-import { slide as Menu } from 'react-burger-menu';
-import { FaQuestionCircle } from 'react-icons';
 import './Header.css';
 
 function Header() {
@@ -26,17 +24,6 @@ function Header() {
 			</div>
 			{!enableSidebar && (
 				<div id='mySidenav' className='sidenav'>
-					{/* <Navbar.Brand href='/home' className='logo'>
-							Memoryze
-						</Navbar.Brand> */}
-					{/* <span
-							className='closeBtn'
-							onClick={() => {
-								setEnableSidebar(true);
-							}}>
-							&times;
-						</span> */}
-
 					<a
 						href='/'
 						className='side-link'

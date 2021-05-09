@@ -10,7 +10,7 @@ function LandingView(props) {
 	const mappedFeatures = features.map(({ name, description, image }) => {
 		return (
 			<div className='feature-contents'>
-				<img src={image} alt={name + 'icon'} className='feature-image' />
+				<img src={image} alt={name + ' icon'} className='feature-image' />
 				<div className='feature-texts'>
 					<h5 className='feature-name'>{name}</h5>
 					<p className='feature-description'>{description}</p>
@@ -19,13 +19,13 @@ function LandingView(props) {
 		);
 	});
 	return (
-		<div className='home-container'>
+		<main className='home-container'>
 			<img
 				src={semicircleBackground}
 				alt='semicircle background'
 				className='semicircle-background'
 			/>
-			<div className='section-container landing-section'>
+			<section className='section-container landing-section'>
 				<div className='pitch'>
 					<h3 className="pitch-heading">Audio learning for wherever, whenever</h3>
 					<p className="pitch-paragraph">
@@ -38,14 +38,14 @@ function LandingView(props) {
 					</a>
 				</div>
 				<img src={manStudying} alt='man-studying' className='man-studying' />
-			</div>
-			<div className='section-container'>
+			</section>
+			<section className='section-container'>
 				<div className='features'>
 					<h4 className='features-heading'>Features</h4>
 					<div className='feature-contents-container'>{mappedFeatures}</div>
 				</div>
-			</div>
-		</div>
+			</section>
+		</main>
 	);
 }
 
