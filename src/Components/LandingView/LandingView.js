@@ -25,11 +25,10 @@ function LandingView(props) {
 				alt='semicircle background'
 				className='semicircle-background'
 			/>
-			<Header />
-			<div className='section-container'>
+			<div className='section-container landing-section'>
 				<div className='pitch'>
-					<h3>Audio learning for wherever, whenever</h3>
-					<p>
+					<h3 className="pitch-heading">Audio learning for wherever, whenever</h3>
+					<p className="pitch-paragraph">
 						"The other side of the coin is, however, that there is a direct
 						relation between the system concepts and the progress of the
 						operations research"

@@ -1,47 +1,68 @@
-.nav{
-	margin-bottom: 0 !important;
-	position: initial !important;
+.navigation {
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	padding: 10px 15px 0 15px;
+}
+.logo{
+	z-index: 100;
+	text-decoration: none;
+	color: black;
+	margin-top: 15px;
+	font-weight: bold;
+}
+.header-links{
+	margin-top: 23.5px;
+	margin-left: 29px;
+	color: black !important;
+}
+.closeBtn{
+	opacity: 0;
+}
+.header-links a{
+	color: black !important;
+	margin-right: 20px;
+}
+.navbar-brand{
+	
+}
+.bars{
+	opacity: 0;
 }
 .sidenav a {
-	padding: 8px 8px 8px 32px;
+	padding: 15px 8px 0px 32px;
 	text-decoration: none;
-	font-size: 25px;
-	color: dodgerblue;
+	font-size: 18px;
+	color: #323232;
 	display: block;
-	transition: 0.3s;
-}
-
-.sidenav .sidelink:hover {
-	color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-	position: absolute;
-	top: 0;
-	right: 25px;
-	font-size: 36px;
-	margin-left: 50px;
-}
-.sidenav,
-.bars,
-.closebtn,
-.side-link {
+	font-weight: bold;
 	opacity: 0;
 }
 
+/* .sidenav .sidelink:hover {
+	color: #f1f1f1;
+} */
+
+
 @media screen and (max-height: 450px) {
-	.sidenav {
-		padding-top: 15px;
-	}
 	.sidenav a {
 		font-size: 18px;
 	}
 }
 @media (max-width: 600px) {
-	.sidenav,
-	.bars,
-	.closebtn,
-	.side-link {
+	
+	.closeBtn{
+		position: static;
+		margin-top: -20px;
+		top: 0;
+		right: 0;
+		font-size: 60px;
+		margin-left: 50px;
+		color: #323232;
+		z-index: 100;
+		opacity: 1;
+	}
+	.sidenav a {
 		opacity: 1;
 	}
 	.header-links {
@@ -49,23 +70,26 @@
 	}
 	.bars {
 		opacity: 1;
-		color: #2f68f8;
+		color: #323232;
 		width: 10px;
-		/* margin: 15px 20px 5px 5px; */
-		margin-right: 20px;
+		margin-right: 30px;
 		font-size: 45px;
 		cursor: pointer;
 	}
 	.sidenav {
-		width: 250px;
-		height: 100%;
-		position: fixed;
-		z-index: 1;
-		top: 0;
+		width: 100vw;
+		height: 50vh;
+		opacity: 1;
+		position: absolute;
+		border-bottom-left-radius: 35px;
+		border-bottom-right-radius: 35px;
+		box-shadow:0.2px 0.2px 15px #1D58Ec;
+		z-index: 10;
+		margin-top: -10px;
 		right: 0;
-		background-color: #111;
-		overflow-x: hidden;
-		transition: 0.5s;
-		padding-top: 60px;
+		top: 0;
+		background-color: #f1f1f1;
+		padding-top: 75px;
+		font-size: 25px;
 	}
 }
