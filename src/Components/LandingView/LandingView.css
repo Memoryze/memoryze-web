@@ -104,7 +104,7 @@
 .section-heading {
 	font-weight: bold;
 	text-align: center;
-	margin-top: 30px;
+	margin-top: 130px;
 }
 .rock-star-section {
 	justify-content: center;
@@ -133,12 +133,16 @@
 	font-size: 20px;
 }
 .memoji-section {
-	display: flex;
+	/* display: grid;
+	grid-template-columns:1fr 1fr 1fr;
 	padding: 0px;
-	flex-direction: row;
-	justify-content: space-between;
-	align-self: flex-start;
+	align-self: flex-start; */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
+
 .memoji-person {
 	width: 200px;
 	max-height: 280px;
@@ -181,8 +185,11 @@
 		max-height: 500px;
 		grid-template-columns: 50% 50%;
 	}
-	.memoji-person{
+	.memoji-person {
 		width: 45vw;
+	}
+	.last-person {
+		margin-left: 25vw;
 	}
 }
 @media (max-width: 300px) {
@@ -190,6 +197,5 @@
 		margin-top: 435px;
 	}
 }
-@media(max-width: 1160px){
-
+@media (max-width: 1160px) {
 }

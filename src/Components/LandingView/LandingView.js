@@ -86,7 +86,7 @@ function LandingView(props) {
 				<img
 					src={dreadedGuy}
 					alt='memoji and comment'
-					className='memoji-person'
+					className='memoji-person last-person'
 				/>
 			</section>
 		</main>
