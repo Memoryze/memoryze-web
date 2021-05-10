@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Header from '../Header/Header';
-import semicircleBackground from './assets/semicircleBackground.png';
-import manStudying from './assets/manStudying.png';
+import semicircleBackground from '../../assets/semicircleBackground.png';
+import manStudying from '../../assets/manStudying.png';
+import PhoneMockup from '../../assets/PhoneMockup.png';
 import { featuresData } from './data';
 import './LandingView.css';
 
@@ -27,8 +27,10 @@ function LandingView(props) {
 			/>
 			<section className='section-container landing-section'>
 				<div className='pitch'>
-					<h3 className="pitch-heading">Audio learning for wherever, whenever</h3>
-					<p className="pitch-paragraph">
+					<h3 className='pitch-heading'>
+						Audio learning for wherever, whenever
+					</h3>
+					<p className='pitch-paragraph'>
 						"The other side of the coin is, however, that there is a direct
 						relation between the system concepts and the progress of the
 						operations research"
@@ -44,6 +46,7 @@ function LandingView(props) {
 					<h4 className='features-heading'>Features</h4>
 					<div className='feature-contents-container'>{mappedFeatures}</div>
 				</div>
+				<img src={PhoneMockup} alt='phone mockup' className="phone-mockup"/>
 			</section>
 		</main>
 	);

@@ -1,9 +1,9 @@
-import Topics from './assets/Topics.png';
-import Educators from './assets/Educators.png';
-import Community from './assets/Community.png';
-import Resources from './assets/Resources.png';
-import OfflineUse from './assets/OfflineUse.png';
-import Quizzes from './assets/Quizzes.png';
+import Topics from '../../assets/Topics.png';
+import Educators from '../../assets/Educators.png';
+import Community from '../../assets/Community.png';
+import Resources from '../../assets/Resources.png';
+import OfflineUse from '../../assets/OfflineUse.png';
+import Quizzes from '../../assets/Quizzes.png';
 
 export const featuresData = [
 	{
