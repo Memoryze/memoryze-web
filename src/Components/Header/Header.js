@@ -7,7 +7,7 @@ function Header() {
 
 	return (
 		<nav className='navigation'>
-			<Navbar.Brand href='/home' className='logo'>
+			<Navbar.Brand href='/' className='logo'>
 				Memoryze
 			</Navbar.Brand>
 			<Nav className='mr-auto header-links'>
@@ -30,7 +30,15 @@ function Header() {
 						onClick={() => {
 							setEnableSidebar(true);
 						}}>
-						About
+						Home
+					</a>
+					<a
+						href='/for-educators'
+						className='side-link'
+						onClick={() => {
+							setEnableSidebar(true);
+						}}>
+						For Educators
 					</a>
 					<a
 						href='/'

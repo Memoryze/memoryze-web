@@ -4,6 +4,12 @@ import manStudying from '../../assets/manStudying.png';
 import PhoneMockup from '../../assets/PhoneMockup.png';
 import Rockstar from '../../assets/Rockstar.png';
 import dreadedGuy from '../../assets/dreadedGuy.png';
+import groupcard1 from '../../assets/groupcard1.png';
+import groupcard2 from '../../assets/groupcard2.png';
+import groupcard3 from '../../assets/groupcard3.png';
+import groupcard4 from '../../assets/groupcard4.png';
+import groupcard5 from '../../assets/groupcard5.png';
+import groupcard6 from '../../assets/groupcard6.png';
 import { featuresData } from './data';
 import './LandingView.css';
 
@@ -35,7 +41,7 @@ function LandingView(props) {
 					<p className='pitch-paragraph'>
 						"The other side of the coin is, however, that there is a direct
 						relation between the system concepts and the progress of the
-						operations research"
+						operations research
 					</p>
 					<a href='/app-link' className='get-the-app-btn'>
 						Get the app!
@@ -64,29 +70,34 @@ function LandingView(props) {
 			<p className='section-subheading'>Here's what some of them had to say</p>
 			<section className='section-container memoji-section'>
 				<img
-					src={dreadedGuy}
+					src={groupcard1}
 					alt='memoji and comment'
 					className='memoji-person'
 				/>
 				<img
-					src={dreadedGuy}
+					src={groupcard2}
 					alt='memoji and comment'
 					className='memoji-person'
 				/>
 				<img
-					src={dreadedGuy}
+					src={groupcard3}
 					alt='memoji and comment'
 					className='memoji-person'
 				/>
 				<img
-					src={dreadedGuy}
+					src={groupcard4}
 					alt='memoji and comment'
 					className='memoji-person'
 				/>
 				<img
-					src={dreadedGuy}
+					src={groupcard5}
 					alt='memoji and comment'
-					className='memoji-person last-person'
+					className='memoji-person'
+				/>
+				<img
+					src={groupcard6}
+					alt='memoji and comment'
+					className='memoji-person'
 				/>
 			</section>
 		</main>
