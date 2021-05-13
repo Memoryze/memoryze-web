@@ -137,7 +137,7 @@
 }
 .memoji-section {
 	display: grid;
-	grid-template-columns:1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 .memoji-person {
@@ -145,6 +145,23 @@
 
 	max-width: 300px;
 	margin: 20px;
+}
+.footer {
+	background-color: #c4daf0;
+	width: 100vw;
+	height: 150px;
+	border-radius: 130% / 200%;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+}
+.footer-links{
+	color: black;
+	cursor: pointer;
+	text-decoration: none;
 }
 @media (max-width: 775px) {
 	.section-container {

@@ -100,6 +100,21 @@ function LandingView(props) {
 					className='memoji-person'
 				/>
 			</section>
+			<footer className='footer'>
+				<p style={{ fontWeight: 'bold', fontSize: 1 + 'rem', marginTop: 30 + 'px' }}>
+					<span style={{ fontSize: 1.5 + 'rem', paddingTop: 75 + 'px'}}>&copy;</span> Memoryze, 2021.
+					All rights reserved
+				</p>
+				<p>
+					<a href='/terms' className='footer-links'>
+						Terms of service{' '}
+					</a>
+					|{' '}
+					<a href='/privacy-policy' className='footer-links'>
+						Privacy Policy
+					</a>
+				</p>
+			</footer>
 		</main>
 	);
 }
