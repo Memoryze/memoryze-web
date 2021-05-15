@@ -5,11 +5,13 @@ import PhoneMockup from '../../assets/PhoneMockup.png';
 import Rockstar from '../../assets/Rockstar.png';
 import dreadedGuy from '../../assets/dreadedGuy.png';
 import groupcard1 from '../../assets/groupcard1.png';
-import groupcard2 from '../../assets/groupcard2.png';
-import groupcard3 from '../../assets/groupcard3.png';
-import groupcard4 from '../../assets/groupcard4.png';
-import groupcard5 from '../../assets/groupcard5.png';
-import groupcard6 from '../../assets/groupcard6.png';
+import redHairGirl from '../../assets/memojies/redHairGirl.png';
+import dreadGuy from '../../assets/memojies/dreadGuy.png';
+import beanieGirl from '../../assets/memojies/beanieGirl.png';
+import fadeCutBoy from '../../assets/memojies/fadeCutBoy.png';
+import beanieBoy from '../../assets/memojies/beanieBoy.png';
+import multicoloredHairGirl from '../../assets/memojies/multicoloredHairGirl.png';
+
 import standaloneLogo from '../../assets/standaloneLogo.png';
 import instagramIcon from '../../assets/instagramIcon.png';
 import facebookIcon from '../../assets/facebookIcon.png';
@@ -79,31 +81,17 @@ function LandingView(props) {
 					alt='memoji and comment'
 					className='memoji-person'
 				/>
-				<img
-					src={groupcard2}
-					alt='memoji and comment'
-					className='memoji-person'
-				/>
-				<img
-					src={groupcard3}
-					alt='memoji and comment'
-					className='memoji-person'
-				/>
-				<img
-					src={groupcard4}
-					alt='memoji and comment'
-					className='memoji-person'
-				/>
-				<img
-					src={groupcard5}
-					alt='memoji and comment'
-					className='memoji-person'
-				/>
-				<img
-					src={groupcard6}
-					alt='memoji and comment'
-					className='memoji-person'
-				/>
+				<div className='memoji-card'>
+					<img src={redHairGirl} alt='a female memoji' className='memoji' />
+					<p className='memoji-name'>Treasure</p>
+					<p className='memoji-comment'>
+						When I learned about Memoryze, I was excited. Don't get me wrong,
+						books are amazing but scouring through law books can be a dreadful
+						task and I love processes that make life easier for me. With
+						Memoryze, I would be able to listen to lessons while multitasking
+						other activities. What a fun practicable way to learn!
+					</p>
+				</div>
 			</section>
 			<footer className='footer'>
 				<img src={standaloneLogo} alt='logo' className='logo-icon' />
