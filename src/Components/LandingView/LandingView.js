@@ -1,30 +1,17 @@
 import React, { useState } from 'react';
-import semicircleBackground from '../../assets/semicircleBackground.png';
-import manStudying from '../../assets/manStudying.png';
-import PhoneMockup from '../../assets/PhoneMockup.png';
-import Rockstar from '../../assets/Rockstar.png';
-import dreadedGuy from '../../assets/dreadedGuy.png';
-import groupcard1 from '../../assets/groupcard1.png';
-import redHairGirl from '../../assets/memojies/redHairGirl.png';
-import dreadGuy from '../../assets/memojies/dreadGuy.png';
-import beanieGirl from '../../assets/memojies/beanieGirl.png';
-import fadeCutBoy from '../../assets/memojies/fadeCutBoy.png';
-import beanieBoy from '../../assets/memojies/beanieBoy.png';
-import multicoloredHairGirl from '../../assets/memojies/multicoloredHairGirl.png';
+import semicircleBackground from '../../assets/landingPage/semicircleBackground.png';
+import manStudying from '../../assets/landingPage/manStudying.png';
+import PhoneMockup from '../../assets/landingPage/PhoneMockup.png';
+import Rockstar from '../../assets/landingPage/Rockstar.png';
 
-import standaloneLogo from '../../assets/standaloneLogo.png';
-import instagramIcon from '../../assets/instagramIcon.png';
-import facebookIcon from '../../assets/facebookIcon.png';
-import twitterIcon from '../../assets/twitterIcon.png';
-import linkedInIcon from '../../assets/linkedInIcon.png';
-import { featuresData } from './data';
+import { featuresData, memojies } from './data';
 import './LandingView.css';
 
 function LandingView(props) {
-	const [features, setFeatures] = useState(featuresData);
-	const mappedFeatures = features.map(({ name, description, image }) => {
+	const [features] = useState(featuresData);
+	const mappedFeatures = features.map(({ name, description, image }, i) => {
 		return (
-			<div className='feature-contents'>
+			<div className='feature-contents' key={i + name}>
 				<img src={image} alt={name + ' icon'} className='feature-image' />
 				<div className='feature-texts'>
 					<h5 className='feature-name'>{name}</h5>
@@ -54,7 +41,7 @@ function LandingView(props) {
 						Get the app!
 					</a>
 				</div>
-				<img src={manStudying} alt='man-studying' className='man-studying' />
+				<img src={manStudying} alt='man-studying' className='top-image' />
 			</section>
 			<section className='section-container'>
 				<div className='features'>
@@ -76,66 +63,19 @@ function LandingView(props) {
 			</h4>
 			<p className='section-subheading'>Here's what some of them had to say</p>
 			<section className='section-container memoji-section'>
-				<img
-					src={groupcard1}
-					alt='memoji and comment'
-					className='memoji-person'
-				/>
-				<div className='memoji-card'>
-					<img src={redHairGirl} alt='a female memoji' className='memoji' />
-					<p className='memoji-name'>Treasure</p>
-					<p className='memoji-comment'>
-						When I learned about Memoryze, I was excited. Don't get me wrong,
-						books are amazing but scouring through law books can be a dreadful
-						task and I love processes that make life easier for me. With
-						Memoryze, I would be able to listen to lessons while multitasking
-						other activities. What a fun practicable way to learn!
-					</p>
-				</div>
+				{memojies.map(({ name, image, comment }, i) => {
+					return (
+						<div className='memoji-card' key={i + name}>
+							<img src={image} alt='a memoji' className='memoji' />
+							<div className='memoji-texts-container'>
+								<p className='memoji-name'>{name}</p>
+								<p className='memoji-comment'>{comment}</p>
+							</div>
+						</div>
+					);
+				})}
 			</section>
-			<footer className='footer'>
-				<img src={standaloneLogo} alt='logo' className='logo-icon' />
-				<div className='social-links'>
-					<a href='/facebook' target='_blank' rel='noopener noreferrer'>
-						<img src={facebookIcon} alt='logo' className='social-icon' />
-					</a>
-					<a
-						href='https://www.instagram.com/memoryzehq/'
-						target='_blank'
-						rel='noopener noreferrer'>
-						<img src={instagramIcon} alt='logo' className='social-icon' />
-					</a>
-					<a href='/linkedIn' target='_blank' rel='noopener noreferrer'>
-						<img src={linkedInIcon} alt='logo' className='social-icon' />
-					</a>
-					<a
-						href='https://twitter.com/MemoryzeHQ'
-						target='_blank'
-						rel='noopener noreferrer'>
-						<img src={twitterIcon} alt='logo' className='social-icon' />
-					</a>
-				</div>
-				<p
-					style={{
-						fontWeight: 'bold',
-						fontSize: 1 + 'rem',
-						marginTop: 30 + 'px',
-					}}>
-					<span style={{ fontSize: 1.5 + 'rem', paddingTop: 75 + 'px' }}>
-						&copy;
-					</span>{' '}
-					Memoryze, 2021. All rights reserved
-				</p>
-				<p>
-					<a href='/terms' className='footer-link'>
-						Terms of service{' '}
-					</a>
-					|{' '}
-					<a href='/privacy-policy' className='footer-link'>
-						Privacy Policy
-					</a>
-				</p>
-			</footer>
+			
 		</main>
 	);
 }

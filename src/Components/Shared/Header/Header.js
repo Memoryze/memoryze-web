@@ -11,8 +11,8 @@ function Header() {
 				Memoryze
 			</Navbar.Brand>
 			<Nav className='mr-auto header-links'>
-				<a href='#home'>Home</a>
-				<a href='#link'>Link</a>
+				<a href='/'>Home</a>
+				<a href='/for-educators'>For Educators</a>
 			</Nav>
 
 			<div

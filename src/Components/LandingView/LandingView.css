@@ -1,46 +1,3 @@
-.home-container {
-	display: flex;
-	flex-direction: column;
-	width: 100vw;
-}
-.semicircle-background {
-	height: 65vh;
-	width: 100%;
-	position: absolute;
-	z-index: -1000;
-}
-.section-container {
-	display: flex;
-	width: 90%;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 20px;
-	flex-direction: row;
-}
-.section-heading {
-	font-size: 22px;
-	font-weight: bold;
-	text-align: center;
-	margin: 15px;
-	margin-top: 130px;
-}
-.landing-section {
-	/* margin-top: 55px; */
-	padding-top: 55px;
-}
-.pitch {
-	display: flex;
-	flex-direction: column;
-	z-index: 1;
-	width: 50%;
-	max-width: 400px;
-	margin: 20px;
-	align-self: center;
-}
-.pitch-heading {
-}
-.pitch-paragraph {
-}
 .get-the-app-btn {
 	width: 50%;
 	max-width: 300px;
@@ -57,13 +14,7 @@
 .get-the-app-btn:hover {
 	text-decoration: none;
 }
-.man-studying {
-	width: 50%;
-	max-width: 400px;
-	margin: 20px;
-	margin-top: -25px;
-	align-self: center;
-}
+
 .features {
 	display: flex;
 	flex-direction: column;
@@ -139,20 +90,28 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 }
-
-.memoji-person{
-	width: 200px;
-	max-width: 300px;
-	margin: 20px;
+.memoji {
+	width: 45%;
+	align-self: center;
+	height: 25%;
 }
-.memoji-name{
-font-size: 0.75rem;
-font-weight: bold;
-margin-bottom: 0px;
+.memoji-texts-container {
+	height: 75%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 12;
+	-webkit-box-orient: vertical;
+	line-height: 1rem;
 }
-.memoji-comment{
-font-size: 0.70rem;
-margin-bottom: 0px;
+.memoji-name {
+	font-size: 0.75rem;
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+.memoji-comment {
+	font-size: 0.7rem;
+	margin-bottom: 0px;
 }
 .memoji-card {
 	display: flex;
@@ -162,60 +121,12 @@ margin-bottom: 0px;
 	height: 260px;
 	border-radius: 15px;
 	background-color: #f1f1f1;
-	padding:0 10px;
-	
-	box-shadow:0 4px 7px -2px #1D58Ec;
-	/* box-shadow:0.2px 0.2px 5px #1D58Ec; */
-}
-.memoji{
-	width: 45%;
-	align-self: center;
-	height: 70px;
-}
+	padding: 0 10px;
+	margin: 20px;
 
-.footer {
-	background-color: #c4daf0;
-	width: 100vw;
-	height: 185px;
-	border-radius: 130% / 200%;
-	border-bottom-left-radius: 0;
-	border-bottom-right-radius: 0;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	justify-content: center;
-}
-.footer-link{
-	color: black;
-	cursor: pointer;
-	text-decoration: none;
-}
-.logo-icon{
-	width: 50px;
-	margin: 0 auto;
-	margin-bottom:-30px ;
-}
-.social-links{
-	display: flex;
-	flex-direction: row;
-	margin: 0 auto;
-	margin-top: 40px;
-	margin-bottom: -30px;
-}
-.social-icon{
-	width: 25px;
-	margin: 7px;
+	box-shadow: 0 4px 7px -2px #1d58ec;
 }
 @media (max-width: 775px) {
-	.section-container {
-		flex-direction: column;
-		padding: 10px;
-	}
-	.man-studying,
-	.pitch {
-		width: 100%;
-		margin: 10px;
-	}
 	.phone-mockup {
 		width: 100%;
 		margin: 10px;
