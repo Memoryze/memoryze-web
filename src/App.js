@@ -4,15 +4,16 @@ import Header from './Components/Shared/Header/Header';
 import LandingView from './Components/LandingView/LandingView';
 import ForEducators from './Components/ForEducators/ForEducators';
 import Footer from './Components/Shared/Footer/Footer';
+import FAQsPage from './Components/FAQsPage/FAQsPage';
 
 function App() {
 	return (
 		<div>
 			<Header />
-			<Switch>
+			<Switch className="alpha-container">
 				<Route path='/' exact component={LandingView} />
 				<Route path='/for-educators' component={ForEducators} />
-
+				<Route path='/faqs' component={FAQsPage}/>
 				<Redirect path='**' to='/' />
 			</Switch>
 			<Footer/>

@@ -4,6 +4,11 @@ import './Header.css';
 
 function Header() {
 	const [enableSidebar, setEnableSidebar] = useState(true);
+	const [links] = useState([
+		{ url: '/', text: 'Home' },
+		{ url: '/for-educators', text: 'For Educators' },
+		{ url: '/faqs', text: 'FAQs' },
+	]);
 
 	return (
 		<nav className='navigation'>
@@ -11,8 +16,9 @@ function Header() {
 				Memoryze
 			</Navbar.Brand>
 			<Nav className='mr-auto header-links'>
-				<a href='/'>Home</a>
-				<a href='/for-educators'>For Educators</a>
+				{links.map(({ url, text }) => {
+					return <a href={url}>{text}</a>;
+				})}
 			</Nav>
 
 			<div
@@ -24,30 +30,19 @@ function Header() {
 			</div>
 			{!enableSidebar && (
 				<div id='mySidenav' className='sidenav'>
-					<a
-						href='/'
-						className='side-link'
-						onClick={() => {
-							setEnableSidebar(true);
-						}}>
-						Home
-					</a>
-					<a
-						href='/for-educators'
-						className='side-link'
-						onClick={() => {
-							setEnableSidebar(true);
-						}}>
-						For Educators
-					</a>
-					<a
-						href='/'
-						className='side-link'
-						onClick={() => {
-							setEnableSidebar(true);
-						}}>
-						FAQ
-					</a>
+					{links.map(({ url, text }, i) => {
+						return (
+							<a
+								href={url}
+								className='side-link'
+								onClick={() => {
+									setEnableSidebar(true);
+								}}
+								key={i}>
+								{text}
+							</a>
+						);
+					})}
 				</div>
 			)}
 		</nav>
