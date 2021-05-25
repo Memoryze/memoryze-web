@@ -44,7 +44,7 @@ function ForEducators(props) {
 	);
 
 	return (
-		<main>
+		<main className='home-container'>
 			<img
 				src={Rectangle}
 				alt='semicircle background'
@@ -73,7 +73,7 @@ function ForEducators(props) {
 					<h5 className='perks-heading'>What's in it for you?</h5>
 					<div className='perks-contents-container'>{mappedPerks}</div>
 				</section>
-				<section className="dummy-section"></section>
+				<section className='dummy-section'></section>
 				<section className='section-container create-share-earn'>
 					<h5 className='processes-heading'>Create, Share, Earn.</h5>
 					<div className='processes-contents-container'>{mappedProcesses}</div>
