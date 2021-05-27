@@ -33,12 +33,12 @@ function LandingView(props) {
 						Audio learning for wherever, whenever
 					</h3>
 					<p className='pitch-paragraph'>
-						"The other side of the coin is, however, that there is a direct
-						relation between the system concepts and the progress of the
-						operations research
+						Learn something new everyday. The best part is you don't have to put
+						a pause on whatever you're doing to learn. Just select what you want
+						to learn, connect your headphones and press play!
 					</p>
 					<a href='/app-link' className='get-the-app-btn'>
-						Get the app!
+						Get early access!
 					</a>
 				</div>
 				<img src={manStudying} alt='man-studying' className='top-image' />
@@ -54,7 +54,7 @@ function LandingView(props) {
 			<section className='section-container rock-star-section'>
 				<img src={Rockstar} alt='rock star' className='rock-star' />
 				<div className='rock-star-text'>
-					<h5 className='rock-star-heading'>Learn like a Rockstar</h5>
+					<h5 className='rock-star-heading'>Live and learn</h5>
 					<p className='rock-star-description'>{`"That is to say the lack of knowledge of impact of the application interface has common features with The Availability of Professional Evaluation" (Millard Hewitt in The Book of the Well-Known Practice) On the other hand, elements of the essence directly changes the principles of the first-class package.`}</p>
 				</div>
 			</section>
@@ -75,7 +75,6 @@ function LandingView(props) {
 					);
 				})}
 			</section>
-			
 		</main>
 	);
 }

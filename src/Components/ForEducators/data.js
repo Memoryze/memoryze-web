@@ -53,7 +53,7 @@ export const processesData = [
 	{
 		process: 'Record',
 		description:
-			"Next, you start creating courses it takes 2 - 4 weeks to create a course. Don\'t fret if this is your first time creating an audio course. We would be with you throughout the process.",
+			"Next, you start creating courses it takes 2 - 4 weeks to create a course. Don't fret if this is your first time creating an audio course. We would be with you throughout the process.",
 		image: SocialMedia,
 	},
 	{

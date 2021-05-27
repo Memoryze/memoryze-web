@@ -18,7 +18,7 @@ function PrivacyPolicy(props) {
             <span class="c5 c6">
             Site</span>
             <span class="c0">
-            ”) is a service made available by Memoryze Universe, Inc. d/b/a Memoryze (“</span>
+            ”) is a service made available by Memoryze (“</span>
             <span class="c6 c5">
             Memoryze</span>
             <span class="c0">
@@ -56,7 +56,7 @@ function PrivacyPolicy(props) {
             <span class="c0">
             ”) submit to us in connection with your access to and/or use of the Site. This Privacy Policy describes the information we collect from you through the Site, how we use that information, and our legal basis for doing so. It also covers whether and how that information may be shared and your rights and choices regarding the information you provide to us. It also covers whether and how that information may be shared and your rights and choices regarding the information you provide to us. Capitalized words not defined in this Privacy Policy are defined in our&nbsp;</span>
             <span class="c8 c13">
-            <a class="c16" href="https://www.google.com/url?q=https://knowable.fyi/terms&amp;sa=D&amp;source=editors&amp;ust=1622075127589000&amp;usg=AOvVaw39xMAbv4br06MB-Drpau3e">
+            <a class="c16" href="/terms">
             Terms of and Conditions of Use</a>
             </span>
             <span class="c0">
