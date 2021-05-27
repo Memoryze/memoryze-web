@@ -55,7 +55,8 @@ function LandingView(props) {
 				<img src={Rockstar} alt='rock star' className='rock-star' />
 				<div className='rock-star-text'>
 					<h5 className='rock-star-heading'>Live and learn</h5>
-					<p className='rock-star-description'>{`"That is to say the lack of knowledge of impact of the application interface has common features with The Availability of Professional Evaluation" (Millard Hewitt in The Book of the Well-Known Practice) On the other hand, elements of the essence directly changes the principles of the first-class package.`}</p>
+					<p className='rock-star-description'>{`Memoryze is a learning app designed to fit right in with your busy (and maybe not-so-busy) schedules. Audio learning takes the bore out of your daily routine and makes it X10 times more productive. 
+					You get to learn whatever you feel like learning at your own pace, and it requires little effort - just listen, learn and have fun.`}</p>
 				</div>
 			</section>
 			<h4 className='section-heading'>
