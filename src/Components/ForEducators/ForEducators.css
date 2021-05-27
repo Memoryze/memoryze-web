@@ -52,6 +52,13 @@
 	width: 45%;
 	white-space: initial;
 }
+.beta-icon{
+	background-color: #c4daf0;
+	text-align: center;
+	padding: 2px 5px;
+	border-radius: 100%;
+	font-family: 'Times', 'Times New Roman', 'serif', 'sans-serif', system-ui, -apple-system, BlinkMacSystemFont, 'Avenir Next', 'Avenir', 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Fira Sans', 'Roboto', 'Noto', 'Droid Sans', 'Cantarell', 'Oxygen', 'Ubuntu', 'Franklin Gothic Medium', 'Century Gothic';
+}
 .perk,
 .process {
 	font-size: 22px;
