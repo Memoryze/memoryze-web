@@ -56,6 +56,9 @@ body {
 	margin: 20px;
 	align-self: center;
 }
+.tp{
+	width: 80%;
+}
 .tp h1{
 	font-size: 26px;
 }
