@@ -14,7 +14,7 @@ function FAQsPage(props) {
 		return <FAQ question={question} answer={answer} id={i + 'educators'} />;
 	});
 	return (
-		<main className='faq-page'>
+		<main className='home-container'>
 			<img
 				src={semicircleBackground}
 				alt='semi circle background'

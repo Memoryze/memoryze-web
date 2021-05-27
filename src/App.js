@@ -5,18 +5,22 @@ import LandingView from './Components/LandingView/LandingView';
 import ForEducators from './Components/ForEducators/ForEducators';
 import Footer from './Components/Shared/Footer/Footer';
 import FAQsPage from './Components/FAQsPage/FAQsPage';
+import TermsOfServices from './Components/LegalPages/TermsOfServices';
+import PrivacyPolicy from './Components/LegalPages/PrivacyPolicy';
 
 function App() {
 	return (
 		<div>
 			<Header />
-			<Switch className="alpha-container">
+			<Switch className='alpha-container'>
 				<Route path='/' exact component={LandingView} />
 				<Route path='/for-educators' component={ForEducators} />
-				<Route path='/faqs' component={FAQsPage}/>
+				<Route path='/faqs' component={FAQsPage} />
+				<Route path='/terms' component={TermsOfServices} />
+				<Route path='/privacy-policy' component={PrivacyPolicy}/>
 				<Redirect path='**' to='/' />
 			</Switch>
-			<Footer/>
+			<Footer />
 		</div>
 	);
 }

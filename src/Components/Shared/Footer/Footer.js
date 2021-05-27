@@ -43,7 +43,7 @@ function Footer(props) {
 			</p>
 			<p>
 				<a href='/terms' className='footer-link'>
-					Terms of service{' '}
+					Terms of services{' '}
 				</a>
 				|{' '}
 				<a href='/privacy-policy' className='footer-link'>

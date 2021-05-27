@@ -14,6 +14,7 @@
 	display: flex;
 	flex-direction: row;
 	margin: 0 auto;
+	margin-top: 10vh;
 }
 .faq-btn {
 	margin: 10px;
@@ -26,7 +27,8 @@
     font-size: 20px;
 }
 .active-btn {
-	background-color: #c4daf0;
+	/* background-color: #c4daf0; */
+	background-color: #40ff40;
 	color: black;
 }
 .inactive-btn {
@@ -57,16 +59,16 @@
 	padding: 10px;
 }
 .faqs-image {
-	max-width: 400px;
+	max-width: 320px;
 	margin: 0 auto;
 	margin-top: 20px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .btn-container{
         flex-direction: column;
     }
     .faq-btn{
-        max-width: 600px;
+        max-width: 400px;
     }
 }

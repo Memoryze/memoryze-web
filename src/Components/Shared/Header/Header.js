@@ -1,17 +1,28 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import './Header.css';
 
 function Header() {
 	const [enableSidebar, setEnableSidebar] = useState(true);
+	const [scrolling, setScrolling] = useState(false);
 	const [links] = useState([
 		{ url: '/', text: 'Home' },
 		{ url: '/for-educators', text: 'For Educators' },
 		{ url: '/faqs', text: 'FAQs' },
 	]);
+	const listenToScrollEvent = (e) => {
+		if (window.scrollY > 5) {
+			setScrolling(true);
+		} else {
+			setScrolling(false);
+		}
+	};
+	useEffect(() => {
+		window.addEventListener('scroll', listenToScrollEvent);
+	}, []);
 
 	return (
-		<nav className='navigation'>
+		<nav className={scrolling ? 'navigation navigation-with-background' : 'navigation'}>
 			<Navbar.Brand href='/' className='logo'>
 				Memoryze
 			</Navbar.Brand>

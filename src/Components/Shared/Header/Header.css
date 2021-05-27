@@ -3,6 +3,11 @@
 	display: flex;
 	flex-direction: row;
 	padding: 10px 15px 0 15px;
+	position: fixed;
+}
+.navigation-with-background{
+	background-color: #f1f1f1;
+	z-index: 100;
 }
 .logo{
 	z-index: 100;
@@ -18,6 +23,7 @@
 }
 .closeBtn{
 	opacity: 0;
+	z-index: 1020;
 }
 .header-links a{
 	color: black !important;
@@ -75,6 +81,7 @@
 		margin-right: 30px;
 		font-size: 45px;
 		cursor: pointer;
+		
 	}
 	.sidenav {
 		width: 100vw;

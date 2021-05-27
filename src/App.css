@@ -8,6 +8,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	width: 100vw;
+	padding: 100px 0 50px 0;
 }
 .semicircle-background {
 	height: 65vh;
@@ -25,6 +26,7 @@ body {
 	margin: 20px;
 	margin-top: -25px;
 	align-self: center;
+	z-index: -10;
 }
 .section-container {
 	display: flex;
@@ -48,11 +50,20 @@ body {
 .pitch {
 	display: flex;
 	flex-direction: column;
-	z-index: 1;
+	z-index: -10;
 	width: 50%;
 	max-width: 400px;
 	margin: 20px;
 	align-self: center;
+}
+.tp h1{
+	font-size: 26px;
+}
+.tp h2{
+	font-size: 22px;
+}
+.c3{
+	font-weight: bold;
 }
 
 @media (max-width: 775px) {
