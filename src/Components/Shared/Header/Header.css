@@ -9,11 +9,14 @@
 	background-color: #f1f1f1;
 	z-index: 100;
 }
+.logo-text-image{
+	max-width: 200px;
+}
 .logo{
 	z-index: 100;
 	text-decoration: none;
 	color: black;
-	margin-top: 15px;
+	margin-top: 9px;
 	font-weight: bold;
 }
 .header-links{
@@ -56,7 +59,9 @@
 	}
 }
 @media (max-width: 600px) {
-	
+	.logo-text-image{
+		/* width: 70%; */
+	}
 	.closeBtn{
 		position: static;
 		margin-top: -20px;

@@ -1,5 +1,5 @@
 import React from 'react';
-import standaloneLogo from '../../../assets/landingPage/standaloneLogo.png';
+import Logo from '../../../assets/Logo.png';
 import instagramIcon from '../../../assets/landingPage/instagramIcon.png';
 import facebookIcon from '../../../assets/landingPage/facebookIcon.png';
 import twitterIcon from '../../../assets/landingPage/twitterIcon.png';
@@ -9,7 +9,7 @@ import './Footer.css';
 function Footer(props) {
 	return (
 		<footer className='footer'>
-			<img src={standaloneLogo} alt='logo' className='logo-icon' />
+			<img src={Logo} alt='logo' className='logo-icon' />
 			<div className='social-links'>
 				<a href='/facebook' target='_blank' rel='noopener noreferrer'>
 					<img src={facebookIcon} alt='logo' className='social-icon' />

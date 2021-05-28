@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
+import IconWithText from '../../../assets/LogoWithText.png';
 import './Header.css';
 
 function Header() {
@@ -24,7 +25,7 @@ function Header() {
 	return (
 		<nav className={scrolling ? 'navigation navigation-with-background' : 'navigation'}>
 			<Navbar.Brand href='/' className='logo'>
-				Memoryze
+				<img src={IconWithText} alt='logo' className="logo-text-image"/>
 			</Navbar.Brand>
 			<Nav className='mr-auto header-links'>
 				{links.map(({ url, text }) => {
