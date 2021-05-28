@@ -6,6 +6,7 @@
 }
 .get-started-btn {
 	width: 50%;
+	min-width: 150px;
 	max-width: 300px;
 	text-align: center;
 	padding: 10px;
