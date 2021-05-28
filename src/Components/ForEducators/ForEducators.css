@@ -55,9 +55,10 @@
 }
 .beta-icon{
 	background-color: #c4daf0;
+	font-size: 12px;
 	text-align: center;
-	padding: 2px 5px;
-	border-radius: 100%;
+	padding: 0 1px;
+	max-width: 72px;
 	font-family: 'Times', 'Times New Roman', 'serif', 'sans-serif', system-ui, -apple-system, BlinkMacSystemFont, 'Avenir Next', 'Avenir', 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Fira Sans', 'Roboto', 'Noto', 'Droid Sans', 'Cantarell', 'Oxygen', 'Ubuntu', 'Franklin Gothic Medium', 'Century Gothic';
 }
 .perk,

@@ -16,7 +16,9 @@ function ForEducators(props) {
 
 				<div className='perk-texts'>
 					<h5 className='perk'>
-						{perk} {i === 0 && <span className='beta-icon' title="alpha feature - coming later">α</span>}
+						<br></br>
+
+						{perk} {i === 0 && <p className='beta-icon' title="alpha feature - coming later">αlpha feature</p>}
 					</h5>
 					<p className='perk-description'>{description}</p>
 				</div>
