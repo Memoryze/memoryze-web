@@ -59,12 +59,14 @@
 	}
 }
 @media (max-width: 600px) {
+	
 	.logo-text-image{
-		/* width: 70%; */
+		/* width: 60vw; */
+		margin-right: -10vw;
 	}
 	.closeBtn{
 		position: static;
-		margin-top: -20px;
+		margin-top: -7px;
 		top: 0;
 		right: 0;
 		font-size: 60px;
@@ -72,6 +74,10 @@
 		color: #323232;
 		z-index: 100;
 		opacity: 1;
+		position: fixed;
+		z-index: 100;
+		right: 0;
+		margin-right: 10px;
 	}
 	.sidenav a {
 		opacity: 1;
@@ -83,9 +89,12 @@
 		opacity: 1;
 		color: #323232;
 		width: 10px;
-		margin-right: 30px;
+		margin-right: 2.5rem;
 		font-size: 45px;
 		cursor: pointer;
+		position: fixed;
+		z-index: 100;
+		right: 0;
 		
 	}
 	.sidenav {

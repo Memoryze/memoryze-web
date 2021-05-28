@@ -28,8 +28,8 @@ function Header() {
 				<img src={IconWithText} alt='logo' className="logo-text-image"/>
 			</Navbar.Brand>
 			<Nav className='mr-auto header-links'>
-				{links.map(({ url, text }) => {
-					return <a href={url}>{text}</a>;
+				{links.map(({ url, text }, i) => {
+					return <a href={url} key={i+'link'}>{text}</a>;
 				})}
 			</Nav>
 
