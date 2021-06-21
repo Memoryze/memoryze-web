@@ -38,7 +38,7 @@ export const featuresData = [
 	{
 		name: 'Offline Use',
 		description:
-			"Download lessons so you can listen to them even when you're out of data.",
+			"Download lessons so you can listen to them even when you're not connected to the internet.",
 		image: OfflineUse,
 	},
 	{

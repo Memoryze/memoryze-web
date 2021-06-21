@@ -55,7 +55,7 @@ function LandingView(props) {
 				<img src={Rockstar} alt='rock star' className='rock-star' />
 				<div className='rock-star-text'>
 					<h5 className='rock-star-heading'>Live and learn</h5>
-					<p className='rock-star-description'>{`Memoryze is a learning app designed to fit right in with your busy (and maybe not-so-busy) schedules. Audio learning takes the bore out of your daily routine and makes it X10 times more productive. 
+					<p className='rock-star-description'>{`Memoryze is a learning app designed to fit right in with your busy (and maybe not-so-busy) schedules. Audio learning takes the bore out of your daily routine and makes it 10x times more productive. 
 					You get to learn whatever you feel like learning at your own pace, and it requires little effort - just listen, learn and have fun.`}</p>
 					<a href='/app-link' className='get-the-app-btn'>
 						Get early access!

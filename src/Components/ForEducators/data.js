@@ -12,7 +12,7 @@ import Investing from '../../assets/forEducators/Investing.png';
 export const perksData = [
 	{
 		perk: 'Get paid',
-		description: 'Earn royalties from your courses same way as artistes earn from their music. The more learners you get, the more money you earn. It\'s that simple.',
+		description: 'Earn royalties from your courses same way artistes earn from their music. The more learners you get, the more money you earn. It\'s that simple.',
 		image: GetPaid,
 	},
 	{

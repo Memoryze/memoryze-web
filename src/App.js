@@ -7,6 +7,7 @@ import Footer from './Components/Shared/Footer/Footer';
 import FAQsPage from './Components/FAQsPage/FAQsPage';
 import TermsOfServices from './Components/LegalPages/TermsOfServices';
 import PrivacyPolicy from './Components/LegalPages/PrivacyPolicy';
+import Waitlist from './Components/Waitlist/Waitlist';
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 				<Route path='/faqs' component={FAQsPage} />
 				<Route path='/terms' component={TermsOfServices} />
 				<Route path='/privacy-policy' component={PrivacyPolicy}/>
+				<Route path='/waitlist' component={Waitlist}/>
 				<Redirect path='**' to='/' />
 			</Switch>
 			<Footer />
