@@ -20,7 +20,10 @@ function Footer(props) {
 					rel='noopener noreferrer'>
 					<img src={instagramIcon} alt='logo' className='social-icon' />
 				</a>
-				<a href='/linkedIn' target='_blank' rel='noopener noreferrer'>
+				<a
+					href='https://www.linkedin.com/company/memoryze-co/about/'
+					target='_blank'
+					rel='noopener noreferrer'>
 					<img src={linkedInIcon} alt='logo' className='social-icon' />
 				</a>
 				<a
@@ -30,7 +33,7 @@ function Footer(props) {
 					<img src={twitterIcon} alt='logo' className='social-icon' />
 				</a>
 				<a
-					href='tiktok'
+					href='https://vm.tiktok.com/ZMdyGJAUA/'
 					target='_blank'
 					rel='noopener noreferrer'>
 					<img src={tiktokIcon} alt='logo' className='social-icon' />
