@@ -4,6 +4,7 @@
 	flex-direction: row;
 	padding: 10px 15px 0 15px;
 	position: fixed;
+	z-index: 100;
 }
 .navigation-with-background{
 	background-color: #f1f1f1;

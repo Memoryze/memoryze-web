@@ -46,6 +46,7 @@ body {
 .landing-section {
 	/* margin-top: 55px; */
 	padding-top: 55px;
+	z-index: 50;
 }
 .pitch {
 	display: flex;

@@ -19,6 +19,7 @@
     "tripetto-runner-autoscroll": "^5.0.4",
     "tripetto-runner-foundation": "^6.0.4",
     "tripetto-services": "^2.0.0",
+    "waitlistapi": "^0.6.2",
     "web-vitals": "^1.1.1"
   },
   "scripts": {

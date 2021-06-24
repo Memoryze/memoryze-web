@@ -7,7 +7,8 @@ import Footer from './Components/Shared/Footer/Footer';
 import FAQsPage from './Components/FAQsPage/FAQsPage';
 import TermsOfServices from './Components/LegalPages/TermsOfServices';
 import PrivacyPolicy from './Components/LegalPages/PrivacyPolicy';
-import Waitlist from './Components/Waitlist/Waitlist';
+import WaitList from './Components/WaitList/WaitList';
+import EducatorsForm from './Components/EducatorsForm/EducatorsForm';
 
 function App() {
 	return (
@@ -18,8 +19,9 @@ function App() {
 				<Route path='/for-educators' component={ForEducators} />
 				<Route path='/faqs' component={FAQsPage} />
 				<Route path='/terms' component={TermsOfServices} />
-				<Route path='/privacy-policy' component={PrivacyPolicy}/>
-				<Route path='/waitlist' component={Waitlist}/>
+				<Route path='/privacy-policy' component={PrivacyPolicy} />
+				<Route path='/wait-list' component={WaitList} />
+				<Route path='/educators-get-started' component={EducatorsForm} />
 				<Redirect path='**' to='/' />
 			</Switch>
 			<Footer />

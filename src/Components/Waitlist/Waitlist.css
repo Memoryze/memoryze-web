@@ -1,9 +1,16 @@
-/* .main {
-    position: relative;
-    min-height: 80vh;
-    
+h1 {
+	color: #eeeeee;
 }
-iframe{
-    margin-bottom: 60vh;
-    position: fixed;
-} */
+.container--waitlistapi {
+	margin: 0 auto;
+	background-color: #222222;
+}
+.button--waitlistapi {
+	background-color: #000000;
+}
+.statusTextContainer--waitlistapi {
+	color: #eeeeee;
+}
+.referralLinkField--text {
+	color: #eeeeee;
+}

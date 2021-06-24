@@ -62,7 +62,7 @@ function ForEducators(props) {
 						is for you. Create fantastic audio courses and monetize your
 						knowledge. That's right! You are getting paid for being smart
 					</p>
-					<a href='/app-link' className='get-started-btn'>
+					<a href='/educators-get-started' className='get-started-btn'>
 						Get started
 					</a>
 				</div>
@@ -77,7 +77,6 @@ function ForEducators(props) {
 					<h5 className='perks-heading'>What's in it for you?</h5>
 					<div className='perks-contents-container'>{mappedPerks}</div>
 				</section>
-				<section className='dummy-section'></section>
 				<section className='section-container create-share-earn'>
 					<h5 className='processes-heading'>Create, Share, Earn.</h5>
 					<div className='processes-contents-container'>{mappedProcesses}</div>
