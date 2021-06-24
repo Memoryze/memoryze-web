@@ -1,11 +1,7 @@
 import React from 'react';
 import { Waitlist } from 'waitlistapi';
-import './WaitList.css';
-
 const key = process.env.REACT_APP_GET_WAIT_LIST_API_KEY;
-function WaitList(props) {
-    console.log(key)
-	
+function GetWaitList(props) {
 	return (
 		<main className='main container'>
 			<Waitlist api_key={`${key}`} />
@@ -13,4 +9,4 @@ function WaitList(props) {
 	);
 }
 
-export default WaitList;
+export default GetWaitList;
