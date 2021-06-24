@@ -4,7 +4,7 @@ import instagramIcon from '../../../assets/landingPage/instagramIcon.png';
 import facebookIcon from '../../../assets/landingPage/facebookIcon.png';
 import twitterIcon from '../../../assets/landingPage/twitterIcon.png';
 import linkedInIcon from '../../../assets/landingPage/linkedInIcon.png';
-
+import tiktokIcon from '../../../assets/landingPage/tiktokIcon.png';
 import './Footer.css';
 function Footer(props) {
 	return (
@@ -28,6 +28,12 @@ function Footer(props) {
 					target='_blank'
 					rel='noopener noreferrer'>
 					<img src={twitterIcon} alt='logo' className='social-icon' />
+				</a>
+				<a
+					href='tiktok'
+					target='_blank'
+					rel='noopener noreferrer'>
+					<img src={tiktokIcon} alt='logo' className='social-icon' />
 				</a>
 			</div>
 			<p
