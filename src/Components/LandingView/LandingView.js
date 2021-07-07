@@ -5,7 +5,6 @@ import PhoneMockup from '../../assets/landingPage/PhoneMockup.png';
 import Rockstar from '../../assets/landingPage/Rockstar.png';
 
 import { featuresData, memojies } from './data';
-import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import './LandingView.css';
 
@@ -29,7 +28,7 @@ function LandingView(props) {
 				alt='semicircle background'
 				className='semicircle-background'
 			/>
-			<Zoom>
+			<Fade>
 				<section className='section-container landing-section'>
 					<div className='pitch'>
 						<h3 className='pitch-heading'>
@@ -46,8 +45,8 @@ function LandingView(props) {
 					</div>
 					<img src={manStudying} alt='man-studying' className='top-image' />
 				</section>
-			</Zoom>
-			<Zoom>
+			</Fade>
+			<Fade>
 				<section className='section-container'>
 					<div className='features'>
 						<h4 className='features-heading'>Features</h4>
@@ -55,8 +54,8 @@ function LandingView(props) {
 					</div>
 					<img src={PhoneMockup} alt='phone mockup' className='phone-mockup' />
 				</section>
-			</Zoom>
-			<Zoom>
+			</Fade>
+			<Fade>
 				<h4 className='section-heading'>Learn for the sake of learning</h4>
 				<section className='section-container rock-star-section'>
 					<img src={Rockstar} alt='rock star' className='rock-star' />
@@ -69,7 +68,7 @@ function LandingView(props) {
 						</a>
 					</div>
 				</section>
-			</Zoom>
+			</Fade>
 			<Fade>
 				<h4 className='section-heading'>
 					Hundreds of people have signup up for early access
