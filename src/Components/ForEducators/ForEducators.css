@@ -33,18 +33,14 @@
 .processes-contents-container {
 	display: grid;
 	width: 100%;
-	max-height: 500px;
 	grid-template-columns: 50% 50%;
-	grid-area: auto;
-	justify-content: space-between;
-	padding: 10px;
-	height: 100%;
 }
 .perks-heading,
 .processes-heading {
 	text-align: center;
 	font-size: 25px;
 	font-weight: bold;
+	margin-bottom: 30px;
 }
 .perk-image {
 	max-height: 150px;
@@ -78,7 +74,7 @@
 	padding: 15px;
 }
 .create-share-earn {
-	margin-top: 100px;
+	margin-top: 10px;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -94,17 +90,14 @@
 	font-weight: bold;
 	color: #1d58ec;
 	border-radius: 100%;
-	/* margin-right: 10px; */
 }
 
 .process-image-container {
-	/* width: 77%; */
 	display: flex;
 }
 
 .process-image {
 	max-height: 150px;
-	/* width: 80%; */
 	width: 75%;
 	align-self: center;
 }
@@ -126,53 +119,5 @@
 	.perk-texts,
 	.process-texts {
 		width: 100%;
-	}
-	.create-share-earn{
-		margin-bottom: 300px;
-	}
-}
-/* Need to find a way to prevent the sections from overlapping
-This is a temporary fix */
-@media (min-width: 773px) and (max-width: 1048px) {
-	.create-share-earn {
-		margin-top: 200px;
-	}
-}
-
-@media (min-width: 553px) and (max-width: 785px) {
-	.create-share-earn {
-		margin-top: 480px;
-	}
-}
-@media (min-width: 410px) and (max-width: 500px) {
-	.create-share-earn {
-		margin-top: 650px;
-	}
-}
-
-@media (min-width: 540px) and (max-width: 558px) {
-	.create-share-earn {
-		margin-top: 515px;
-	}
-}
-
-@media (min-width: 320px) and (max-width: 380px) {
-	.create-share-earn {
-		margin-top: 830px;
-	}
-}
-@media (min-width: 374px) and (max-width: 378px) {
-	.create-share-earn {
-		margin-top: 700px;
-	}
-}
-@media (min-width: 275px) and (max-width: 374px) {
-	.create-share-earn {
-		margin-top: 1105px;
-	}
-}
-@media (min-width: 318px) and (max-width: 325px) {
-	.create-share-earn {
-		margin-top: 850px;
 	}
 }

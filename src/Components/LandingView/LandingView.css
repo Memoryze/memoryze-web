@@ -31,10 +31,7 @@
 	justify-content: space-between;
 	padding: 10px;
 }
-.features-heading {
-}
 .feature-image {
-	/* width: 40%; */
 	max-height: 150px;
 	align-self: center;
 }
@@ -147,7 +144,6 @@
 		display: grid;
 		width: 100%;
 		grid-template-columns: 48.5% 48.5%;
-		/* margin-left: -5vw; */
 	}
 }
 @media (max-width: 300px) {

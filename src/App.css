@@ -16,10 +16,6 @@ body {
 	position: absolute;
 	z-index: -1000;
 }
-.pitch-heading {
-}
-.pitch-paragraph {
-}
 .top-image {
 	width: 50%;
 	max-width: 400px;
@@ -44,7 +40,6 @@ body {
 	margin-top: 130px;
 }
 .landing-section {
-	/* margin-top: 55px; */
 	padding-top: 55px;
 	z-index: 50;
 }
@@ -82,8 +77,3 @@ body {
 		margin: 10px;
 	}
 }
-/* @media (max-width: 400px) {
-	.create-share-earn {
-		margin-top: 600px;
-	}
-} */
